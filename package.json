@@ -5,9 +5,13 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
+    "test": "mocha",
+    "test-watch": "mocha -w"
   },
   "author": "Jeffrey Wong",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^5.2.0",
+    "sinon": "^5.0.7"
   }
 }
