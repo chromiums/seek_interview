@@ -1,8 +1,8 @@
 // Base class for clarity
 class PricingRule {
   constructor() {
-    if(this.constructor === PricingRule) {
-      throw new Error('Can\'t instantiate abstract class!');
+    if (this.constructor === PricingRule) {
+      throw new Error("Can't instantiate abstract class!");
     }
   }
 }
@@ -18,7 +18,7 @@ class Default extends PricingRule {
   constructor() {
     super();
   }
-  
+
   calculate(items) {
     let price = items[0].price;
     return items.length * price;
@@ -28,13 +28,13 @@ class Default extends PricingRule {
 class XforY extends ProductPricingRule {
   constructor(productId, numItems, reducedNumItems) {
     super(productId);
-    
+
     this.numItems = numItems;
     this.reducedNumItems = reducedNumItems;
   }
 
   calculate(items) {
-    if(items.length === 0) {
+    if (items.length === 0) {
       return 0;
     }
 
@@ -59,13 +59,13 @@ class XorMore extends ProductPricingRule {
   }
 
   calculate(items) {
-    if(items.length === 0) {
+    if (items.length === 0) {
       return 0;
     }
 
     let originalPrice = items[0].price;
 
-    if(items.length >= this.numItems) {
+    if (items.length >= this.numItems) {
       return items.length * this.discountedPrice;
     }
 
@@ -81,7 +81,7 @@ class Flat extends ProductPricingRule {
   }
 
   calculate(items) {
-    if(items.length === 0) {
+    if (items.length === 0) {
       return 0;
     }
 
