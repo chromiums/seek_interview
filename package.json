@@ -4,6 +4,7 @@
   "description": "Interview test for Seek",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
   },
   "author": "Jeffrey Wong",
   "license": "ISC",
