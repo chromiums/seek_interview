@@ -3,6 +3,8 @@ Implementation of the coding question from seek.
 
 Example Scenarios from the Problem Description can be found in `Scenarios-test.js`.
 
+The core code is written with `Node.js`. The unit tests have a dependency on the npm packages `sinon` and `mocha`.
+
 ## Installation
 Run `git clone https://github.com/chromiums/seek_interview.git`
 
