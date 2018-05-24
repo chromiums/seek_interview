@@ -1,3 +1,5 @@
+// Tests of the provided example scenarios
+
 let assert = require("assert");
 let { XforY, XorMore, Flat } = require("../PricingRules");
 let Checkout = require("../Checkout");

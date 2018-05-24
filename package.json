@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node main.js",
     "test": "mocha",
-    "test-watch": "mocha -w"
+    "test-watch": "mocha -w",
+    "test-scenarios": "mocha test/Scenarios-test.js"
   },
   "author": "Jeffrey Wong",
   "license": "ISC",
