@@ -1,0 +1,12 @@
+{
+  "name": "seek",
+  "version": "1.0.0",
+  "description": "Interview test for Seek",
+  "main": "main.js",
+  "scripts": {
+  },
+  "author": "Jeffrey Wong",
+  "license": "ISC",
+  "devDependencies": {
+  }
+}
